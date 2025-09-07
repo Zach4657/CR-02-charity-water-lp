@@ -1,47 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Charity: water — One Movement</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+  <!-- Skip to content for keyboard users -->
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <!-- Top navigation bar -->
+  <nav class="top-bar" aria-label="Utility">
+    <div class="container">
+      <ul class="top-links">
+        <li><a href="https://www.charitywater.org/fundraise" target="_blank" rel="noopener">Take Action</a></li>
+        <li><a href="https://www.charitywater.org/our-work" target="_blank" rel="noopener">About Us</a></li>
+        <li><a href="https://www.charitywater.org/global-water-crisis" target="_blank" rel="noopener">Why We Do What We Do</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand-mark">
+        <div class="logo-box" aria-hidden="true">
+          <img src="img/water-can-transparent.png" alt="" />
         </div>
+        <span class="brand-name">Charity: water</span>
+      </div>
+      <p class="tagline">One Generation, One Movement, One chance to end the water crisis.</p>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-label="Photo highlights">
+    
+
+        <!-- Side-by-side images -->
+        <div class="side-by-side">
+          <figure>
+            <img src="img/Screenshot 2025-08-31 173127.png" alt="Child collecting water" />
+          </figure>
+          <figure>
+            <img src="img/Screenshot 2025-09-07 130106.png" alt="Smiling child at a water point" />
+          </figure>
+          <figure>
+            <img src="img/Screenshot 2025-09-07 155236.png" alt="Women carrying clean water home" />
+          </figure>
+        </div>
+
+        <!-- CTA -->
+        <!-- Centered join The Spring button -->
+        <div style="text-align:center; margin: 24px 0;">
+          <a class="cta" href="https://www.charitywater.org/donate/the-spring" target="_blank" rel="noopener">
+            Give monthly — Join The Spring
+          </a>
+        </div>
+      </div>
     </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
+    <!-- Info band -->
+    <section class="info-band" id="learn-more" aria-labelledby="learn-more-title">
+      <div class="container">
+        <h2 id="learn-more-title">Your gift fuels locally-led solutions</h2>
+        <p>
+          Be the generation that turns clean water from a dream into a reality for millions. This is your moment to give, to lead, and to change the world forever. Our water projects are locally-led and community-owned — and monthly gifts from The Spring keep them going strong.
+        </p>
+        <p>
+          <a class="info-cta" href="https://www.charitywater.org/brand-partnerships" target="_blank" rel="noopener">
+            Find out how your voice can help save lives »
+          </a>
+        </p>
+      </div>
     </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2025</span> charity: water. 100% of your donation funds clean water projects.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
